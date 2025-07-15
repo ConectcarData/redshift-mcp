@@ -1,0 +1,11 @@
+# Core MCP dependencies
+mcp>=1.0.0
+fastmcp>=2.0.0
+
+# Database connectors (install one of these)
+redshift-connector>=2.0.918  # Amazon's official Redshift connector
+# OR
+# psycopg2-binary>=2.9.9     # Alternative PostgreSQL-compatible connector
+
+# Optional but recommended
+python-dotenv>=1.0.0  # For environment variable management 
