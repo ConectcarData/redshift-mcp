@@ -5,7 +5,7 @@ This script demonstrates how to test the MCP server functionality.
 """
 import asyncio
 import json
-from redshift_mcp_server import (
+from src.redshift_mcp_server import (
     connect_db, query, execute, list_schemas, 
     list_tables, describe_table, disconnect
 )

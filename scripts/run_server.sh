@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activate the virtual environment
-source venv/bin/activate
+source .venv/bin/activate
 
 # Check if environment variables are set
 if [ -n "$REDSHIFT_HOST" ]; then
@@ -16,4 +16,4 @@ fi
 # Run the Redshift MCP server
 echo ""
 echo "Starting Redshift MCP Server..."
-python redshift_mcp_server.py 
+python src/redshift_mcp_server.py 

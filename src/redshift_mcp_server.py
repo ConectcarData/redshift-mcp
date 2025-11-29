@@ -5,8 +5,11 @@ A minimal MCP server that provides basic Redshift database operations.
 """
 import os
 from typing import Optional, List, Dict, Any
+from dotenv import load_dotenv
 import logging
 from dataclasses import dataclass
+
+load_dotenv()
 
 # Ensure DB_MCP_MODE is set to 'readonly' by default if not defined externally
 if 'DB_MCP_MODE' not in os.environ:
