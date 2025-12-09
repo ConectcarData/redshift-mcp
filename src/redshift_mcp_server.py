@@ -27,7 +27,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Create FastMCP server instance
-mcp = FastMCP("Redshift MCP Server")
+mcp = FastMCP("Redshift MCP Server", host='0.0.0.0', port='8000')
 
 # Connection state
 @dataclass
@@ -466,4 +466,4 @@ if __name__ == "__main__":
     asyncio.run(auto_connect())
     
     # Run the server
-    mcp.run() 
+    mcp.run(transport="streamable-http")
